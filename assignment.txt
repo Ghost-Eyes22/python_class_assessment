@@ -1,0 +1,108 @@
+Python Classes Assessment
+Robot Simulator – Build the Robot Class
+Overview
+You are given a working simulator program called simulator.py
+Your job is to write a file called module.py that contains a class named Robot.
+You may NOT modify the simulator file.
+Your class must work correctly inside the simulator.
+
+📂 Files
+You will have:
+ ✅ assignment.txt
+A text copy of this document.
+✅ test.py (DO NOT EDIT)
+This file can be used to quickly test your code. The output should match expected_output.txt.
+✅ expected_output.txt (DO NOT EDIT)
+This file contains expected text from test.py.
+✅ simulator.py (Edits optional)
+This file should work by the end of the assignment.
+❗ module.py (you must add code to this file)
+Complete the Robot class in this file to make everything work.
+
+
+
+
+Objective
+Create a class called:
+class Robot:
+Your class must contain the required properties and methods described below.
+
+🔹 Constructor (__init__)
+When a robot is created:
+robot = Robot(name, color)
+It must initialize the following properties:
+Property
+Starting Value
+self.name
+argument passed into __init__
+self.color
+argument passed into __init__
+self.battery
+100
+self.durability
+100
+self.productivity
+0
+
+
+
+Required Methods
+Your class must include the following methods:
+
+🔋 charge(amount)
+amount will be passed in as a string.
+Convert it to an integer inside the method.
+Increase battery by the amount.
+If the battery would go above 100, set it to 100.
+Return string: <name> charged by X.
+
+🛠 work(hours)
+hours will be passed in as a string.
+Convert it to an integer inside the method.
+Decrease battery by hours × 10
+Decrease durability by hours × 5
+Increase productivity by hours × 8
+Return string: <name> worked for X hours.
+
+🔧 repair()
+Increase durability by 20
+Decrease productivity by 10
+Return string: <name> has been repaired.
+
+📊 status()
+Return a string formatted exactly like this:
+<name> | Battery: X | Durability: Y | Productivity: Z
+
+Spacing and capitalization matter.
+
+
+🧠 What This Assignment Tests
+ ✔ Writing a class from a specification
+ ✔ Creating and initializing properties
+ ✔ Using and modifying object state
+ ✔ Converting input types
+ ✔ Writing methods that return formatted strings
+ ✔ Enforcing constraints
+
+🏁 Success Criteria
+Your program works if:
+The simulator runs without crashing
+
+
+All commands behave correctly
+
+
+Values stay within limits
+
+
+Output formatting matches exactly
+
+
+
+🌟 Challenge Extension (Extra Credit)
+Add logic so that:
+If battery would go below 0, the robot cannot work. Print “not enough battery”.
+
+If durability drops below 50, print a warning message.
+
+Any additional features you think of that don’t break the program's core functionality.
